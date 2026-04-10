@@ -9,7 +9,9 @@ import contactRoute from "./route/contact.route.js";
 
 const app = express();
 
-app.use(cors());
+// app.use(cors());
+// Replace the old app.use(cors()) with this:
+app.use(cors()); // For now, this is fine to get it running, but eventually you should specify your Vercel URL here.
 app.use(express.json());
 
 // 1. THIS MUST BE BEFORE YOU ACCESS process.env
