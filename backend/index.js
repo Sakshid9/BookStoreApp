@@ -9,31 +9,34 @@ import contactRoute from "./route/contact.route.js";
 
 const app = express();
 
-// app.use(cors());
-// Replace the old app.use(cors()) with this:
-app.use(cors()); // For now, this is fine to get it running, but eventually you should specify your Vercel URL here.
-app.use(express.json());
-
-// 1. THIS MUST BE BEFORE YOU ACCESS process.env
+// 1. Initialize environment variables FIRST
 dotenv.config();
 
+// 2. Configure CORS (Must be before routes)
+// This allows your specific Vercel subdomain to talk to this Render backend
+app.use(cors({
+  origin: ["https://bookstore.dubeysakshi.in", "https://book-store-app-eight-umber.vercel.app"],
+  methods: ["GET", "POST", "PUT", "DELETE"],
+  credentials: true
+}));
+
+// 3. Middleware for JSON
+app.use(express.json());
+
 const PORT = process.env.PORT || 4001;
-const URI = process.env.MongoDB_URI; // 2. Double-check this name matches your .env file!
+const URI = process.env.MongoDB_URI;
 
-// 3. Connect to MongoDB (with a check to prevent that crash)
+// 4. Connect to MongoDB
 if (!URI) {
-  console.error("ERROR: MongoDBURI is not defined in .env file!");
-  process.exit(1); // Stop the server if the URI is missing
+  console.error("ERROR: MongoDB_URI is not defined in .env file!");
+  process.exit(1);
 }
 
-try {
-  mongoose.connect(URI);
-  console.log("Connected to mongodb");
-} catch (error) {
-  console.log("Error: ", error);
-}
+mongoose.connect(URI)
+  .then(() => console.log("Connected to mongodb"))
+  .catch((error) => console.log("MongoDB Connection Error: ", error));
 
-// Defining Routes
+// 5. Defining Routes (Middleware must be above these!)
 app.use("/book", bookRoute);
 app.use("/user", userRoute);
 app.use("/contact", contactRoute);
