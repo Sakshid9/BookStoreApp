@@ -21,7 +21,10 @@ function Contact() {
     };
     try {
       // Ensure this matches your backend port (4001)
-      const res = await axios.post("http://localhost:4001/contact", contactInfo);
+      // const res = await axios.post("http://localhost:4001/contact", contactInfo); //FOR LOCAL
+
+      //FOR RENDER TO TALK
+      const res = await axios.post("https://bookstoreapp-acyp.onrender.com/user/contact", userInfo);
       if (res.data) {
         toast.success("Message sent successfully!");
         reset();

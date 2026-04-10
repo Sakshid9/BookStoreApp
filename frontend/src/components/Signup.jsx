@@ -24,7 +24,8 @@ function Signup() {
     }
 
     try {
-      const res = await axios.post("http://localhost:4001/user/signup", userInfo);
+      // const res = await axios.post("http://localhost:4001/user/signup", userInfo); //for local
+      const res = await axios.post("https://bookstoreapp-acyp.onrender.com/user/signup", userInfo); // for render to talk
       if (res.data) {
         toast.success('Signup Successful!');
         localStorage.setItem("Users", JSON.stringify(res.data.user));
