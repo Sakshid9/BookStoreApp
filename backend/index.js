@@ -7,15 +7,16 @@ import bookRoute from "./route/book.route.js";
 import userRoute from "./route/user.route.js";
 import contactRoute from "./route/contact.route.js";
 
+// 1. Initialize App and Env
 const app = express();
-
-// 1. Initialize environment variables FIRST
 dotenv.config();
 
-// 2. Configure CORS (Must be before routes)
-// This allows your specific Vercel subdomain to talk to this Render backend
+// 2. Configure CORS (Must be BEFORE routes)
 app.use(cors({
-  origin: ["https://bookstore.dubeysakshi.in", "https://book-store-app-eight-umber.vercel.app"],
+  origin: [
+    "https://bookstore.dubeysakshi.in",
+    "https://book-store-app-eight-umber.vercel.app"
+  ],
   methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true
 }));
@@ -36,7 +37,7 @@ mongoose.connect(URI)
   .then(() => console.log("Connected to mongodb"))
   .catch((error) => console.log("MongoDB Connection Error: ", error));
 
-// 5. Defining Routes (Middleware must be above these!)
+// 5. Defining Routes
 app.use("/book", bookRoute);
 app.use("/user", userRoute);
 app.use("/contact", contactRoute);

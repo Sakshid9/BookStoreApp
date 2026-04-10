@@ -11,9 +11,12 @@ function Freebook() {
   useEffect(() => {
     const getBook = async () => {
       try {
-        const res = await axios.get("http://localhost:4001/book");
+        // Fetching from your live Render backend
+        const res = await axios.get("https://bookstoreapp-acyp.onrender.com/book");
+
         // Filter only the free books
         const data = res.data.filter((item) => item.category === "Free");
+        console.log("Free books data:", data); // Check your console to see if data arrives
         setBook(data);
       } catch (error) {
         console.log("Error fetching free books:", error);
@@ -46,26 +49,25 @@ function Freebook() {
   };
 
   return (
-    <>
-      <div className="max-w-screen-2xl container mx-auto md:px-20 px-4 ">
-        <h1 className="font-semibold text-xl pb-2">Free Offered Courses</h1>
-        <div>
-          <p>
-            Explore our curated list of completely free courses and books. Start your
-            journey into coding, design, and cloud computing without spending a dime!
-          </p>
-        </div>
+    <div className="max-w-screen-2xl container mx-auto md:px-20 px-4">
+      <h1 className="font-semibold text-xl pb-2">Free Offered Courses</h1>
+      <p>
+        Explore our curated list of completely free courses and books. Start your
+        journey into coding, design, and cloud computing without spending a dime!
+      </p>
 
-        {/* FIX: Added pb-14 (padding-bottom) to push the footer down */}
-        <div className="mt-6 pb-14">
+      <div className="mt-6 pb-14">
+        {book.length > 0 ? (
           <Slider {...settings}>
             {book.map((item) => (
               <Cards item={item} key={item._id} />
             ))}
           </Slider>
-        </div>
+        ) : (
+          <p className="text-gray-500 italic mt-4">Loading free courses...</p>
+        )}
       </div>
-    </>
+    </div>
   );
 }
 
