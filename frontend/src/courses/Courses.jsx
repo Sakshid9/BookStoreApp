@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "../components/Navbar";
-import Course from "../components/Course";
-import Footer from "../components/footer";
+import Course from "../components/Course"; // Make sure this is Capital C
+import Footer from "../components/Footer"; // Make sure this is Capital F
 
 function Courses() {
   return (
@@ -14,5 +14,4 @@ function Courses() {
     </>
   );
 }
-
 export default Courses;
