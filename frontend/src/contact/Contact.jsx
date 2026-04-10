@@ -19,21 +19,20 @@ function Contact() {
       email: data.email,
       message: data.message,
     };
-    try {
-      // Ensure this matches your backend port (4001)
-      // const res = await axios.post("http://localhost:4001/contact", contactInfo); //FOR LOCAL
 
-      //FOR RENDER TO TALK
-      const res = await axios.post("https://bookstoreapp-acyp.onrender.com/user/contact", userInfo);
+    try {
+      // NOTE: Based on your index.js, this should be /contact, not /user/contact
+      const res = await axios.post("https://bookstoreapp-acyp.onrender.com/contact", contactInfo);
+
       if (res.data) {
         toast.success("Message sent successfully!");
-        reset();
+        reset(); // Clears the form fields
       }
     } catch (err) {
       if (err.response) {
-        toast.error("Error: " + err.response.data.message);
+        toast.error("Error: " + (err.response.data.message || "Something went wrong"));
       } else {
-        toast.error("Error: Server not responding");
+        toast.error("Error: Server not responding. Please try again later.");
       }
     }
   };
@@ -41,43 +40,49 @@ function Contact() {
   return (
     <>
       <Navbar />
-      <div className="flex h-screen items-center justify-center">
-        <div className="w-full max-w-md p-6 bg-white dark:bg-slate-900 shadow-md rounded-xl border dark:border-slate-700">
+      <div className="flex h-screen items-center justify-center p-4">
+        <div className="w-full max-w-md p-8 bg-white dark:bg-slate-800 shadow-lg rounded-xl border dark:border-slate-700">
           <h1 className="text-2xl font-bold mb-6 dark:text-white">Contact Us</h1>
           <form onSubmit={handleSubmit(onSubmit)}>
+            {/* Name Field */}
             <div className="mb-4 space-y-2">
               <label className="block dark:text-gray-300">Name</label>
               <input
                 type="text"
                 placeholder="Enter your name"
-                className="w-full px-3 py-2 border rounded-md outline-none dark:bg-slate-800 dark:text-white"
-                {...register("name", { required: true })}
+                className="w-full px-3 py-2 border rounded-md outline-none dark:bg-slate-700 dark:text-white dark:border-slate-600"
+                {...register("name", { required: "Name is required" })}
               />
-              {errors.name && <span className="text-sm text-red-500">Required</span>}
+              {errors.name && <span className="text-sm text-red-500">{errors.name.message}</span>}
             </div>
 
+            {/* Email Field */}
             <div className="mb-4 space-y-2">
               <label className="block dark:text-gray-300">Email</label>
               <input
                 type="email"
                 placeholder="Email address"
-                className="w-full px-3 py-2 border rounded-md outline-none dark:bg-slate-800 dark:text-white"
-                {...register("email", { required: true })}
+                className="w-full px-3 py-2 border rounded-md outline-none dark:bg-slate-700 dark:text-white dark:border-slate-600"
+                {...register("email", { required: "Email is required" })}
               />
-              {errors.email && <span className="text-sm text-red-500">Required</span>}
+              {errors.email && <span className="text-sm text-red-500">{errors.email.message}</span>}
             </div>
 
+            {/* Message Field */}
             <div className="mb-4 space-y-2">
               <label className="block dark:text-gray-300">Message</label>
               <textarea
-                placeholder="Type your message"
-                className="w-full px-3 py-2 border rounded-md outline-none dark:bg-slate-800 dark:text-white h-32"
-                {...register("message", { required: true })}
+                placeholder="How can we help you?"
+                className="w-full px-3 py-2 border rounded-md outline-none dark:bg-slate-700 dark:text-white dark:border-slate-600 h-32"
+                {...register("message", { required: "Message is required" })}
               ></textarea>
-              {errors.message && <span className="text-sm text-red-500">Required</span>}
+              {errors.message && <span className="text-sm text-red-500">{errors.message.message}</span>}
             </div>
 
-            <button type="submit" className="bg-pink-500 text-white px-4 py-2 rounded-md hover:bg-pink-700 duration-300">
+            <button
+              type="submit"
+              className="w-full bg-pink-500 text-white px-4 py-2 rounded-md hover:bg-pink-700 duration-300 font-semibold"
+            >
               Send Message
             </button>
           </form>
