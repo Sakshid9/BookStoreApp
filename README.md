@@ -13,12 +13,14 @@ A full-stack Bookstore application built using the **MERN** stack. This project 
 
 ## 📑 Table of Contents
 
-  * [Features](https://www.google.com/search?q=%23-features)
-  * [Tech Stack](https://www.google.com/search?q=%23-tech-stack)
-  * [Project Structure](https://www.google.com/search?q=%23-project-structure)
-  * [Installation](https://www.google.com/search?q=%23-installation)
-  * [API Endpoints](https://www.google.com/search?q=%23-api-endpoints)
-  * [Connect With Me](https://www.google.com/search?q=%23-connect-with-me)
+  *[BookStoreApp](#-bookstoreapp)
+  *[Live Demo](#-live-demo)
+  * [Features](#-features)
+  * [Tech Stack](#️-tech-stack)
+  * [Project Structure](#-project-structure)
+  * [Installation](#️-installation)
+  * [API Endpoints](#-api-endpoints)
+  * [Connect With Me](#-connect-with-me)
 
 -----
 
