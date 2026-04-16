@@ -13,8 +13,8 @@ A full-stack Bookstore application built using the **MERN** stack. This project 
 
 ## 📑 Table of Contents
 
-  *[BookStoreApp](#-bookstoreapp)
-  *[Live Demo](#-live-demo)
+  * [BookStoreApp](#-bookstoreapp)
+  * [Live Demo](#-live-demo)
   * [Features](#-features)
   * [Tech Stack](#️-tech-stack)
   * [Project Structure](#-project-structure)
