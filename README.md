@@ -7,7 +7,7 @@ A full-stack Bookstore application built using the **MERN** stack. This project 
 
 ## 🔗 Live Demo
 
-**View the project live:** [https://bookstore.dubeysakshi.in/](bookstore.dubeysakshi.in/)
+**View the project live:** [Book Store App](https://bookstore.dubeysakshi.in/)
 
 -----
 
