@@ -1,10 +1,9 @@
 
-
 -----
 
 # 📚 Bookstore MERN Application
 
-A full-stack Bookstore application built using the **MERN** stack. This project features user authentication, a dynamic book display with categories, and a fully responsive interface designed for a seamless user experience.
+A full-stack Bookstore application built using the **MERN** stack. This project features user authentication, a dynamic book display with categories, and a fully responsive interface.
 
 ## 🔗 Live Demo
 
@@ -14,23 +13,23 @@ A full-stack Bookstore application built using the **MERN** stack. This project 
 
 ## 📑 Table of Contents
 
-  * [Features](https://www.google.com/search?q=%23-features)
-  * [Tech Stack](https://www.google.com/search?q=%23-tech-stack)
-  * [Project Structure](https://www.google.com/search?q=%23-project-structure)
-  * [Installation](https://www.google.com/search?q=%23-installation)
-  * [API Endpoints](https://www.google.com/search?q=%23-api-endpoints)
-  * [Connect With Me](https://www.google.com/search?q=%23-connect-with-me)
+  * [Features](https://www.google.com/search?q=%23features)
+  * [Tech Stack](https://www.google.com/search?q=%23tech-stack)
+  * [Project Structure](https://www.google.com/search?q=%23project-structure)
+  * [Installation](https://www.google.com/search?q=%23installation)
+  * [API Endpoints](https://www.google.com/search?q=%23api-endpoints)
+  * [Connect With Me](https://www.google.com/search?q=%23connect-with-me)
 
 -----
 
 ## ✨ Features
 
-  * **User Authentication:** Secure Signup and Login functionality using `react-hook-form`.
-  * **Dynamic Book Listing:** Real-time data fetching from MongoDB with a specialized "Free Books" section.
-  * **Protected Routes:** Secure access to the `/course` page, accessible only to authenticated users.
-  * **Modern Design:** Sleek and responsive UI built with **Tailwind CSS** and **DaisyUI**.
-  * **Dark Mode Support:** Seamless toggling between light and dark themes.
-  * **Real-time Feedback:** Integrated **react-hot-toast** for smooth user notifications.
+  * **User Authentication:** Secure Signup and Login using `react-hook-form`.
+  * **Dynamic Book Listing:** Fetched directly from MongoDB with a dedicated "Free Books" section.
+  * **Protected Routes:** Secure access to the `/course` page for authenticated users only.
+  * **Modern Design:** Sleek UI built with **Tailwind CSS** and **DaisyUI**.
+  * **Dark Mode Support:** Toggle between light and dark themes seamlessly.
+  * **Real-time Feedback:** Integrated **react-hot-toast** for user notifications.
 
 -----
 
@@ -47,15 +46,15 @@ A full-stack Bookstore application built using the **MERN** stack. This project 
 
 ```text
 BOOKSTOREAPP/
-├── backend/           # Server-side logic (Node/Express)
-│   ├── controller/    # Request handlers & logic
+├── backend/           # Server-side logic
+│   ├── controller/    # Request handlers
 │   ├── model/         # Mongoose schemas
-│   └── route/         # Express API routes
-├── frontend/          # Client-side React app (Vite)
+│   └── route/         # Express routes
+├── frontend/          # Client-side React app
 │   ├── src/           # Components, logic, & styles
 │   └── public/        # Static assets
 ├── .gitignore         # Root git ignore file
-└── README.md          # Project documentation
+└── README.md          # Documentation
 ```
 
 -----
@@ -71,24 +70,24 @@ cd BookStoreApp
 
 ### 2\. Backend Setup
 
-1.  Navigate to backend: `cd backend`
-2.  Install dependencies: `npm install`
-3.  Add a `.env` file with your `PORT` and `MongoDBURI`.
-4.  Start the server: `npm start`
+1.  Go to backend: `cd backend`
+2.  Install: `npm install`
+3.  Add `.env` file with your `PORT` and `MongoDBURI`.
+4.  Run: `npm start`
 
 ### 3\. Frontend Setup
 
-1.  Navigate to frontend: `cd frontend`
-2.  Install dependencies: `npm install`
-3.  Run the development server: `npm run dev`
+1.  Go to frontend: `cd frontend`
+2.  Install: `npm install`
+3.  Run: `npm run dev`
 
 -----
 
 ## 📡 API Endpoints
 
-  * `GET /book` - Fetch the list of all books from the database.
-  * `POST /user/signup` - Register a new user account.
-  * `POST /user/login` - Authenticate an existing user.
+  * `GET /book` - Fetch all books.
+  * `POST /user/signup` - User registration.
+  * `POST /user/login` - User authentication.
 
 -----
 
@@ -100,4 +99,3 @@ Created by **Sakshi Dubey**
   * **LinkedIn:** \<a href="[https://www.linkedin.com/in/sakshid9/](https://www.linkedin.com/in/sakshid9/)" target="\_blank"\>[linkedin.com/in/sakshid9](https://www.google.com/search?q=https://linkedin.com/in/sakshid9)\</a\>
 
 -----
-
