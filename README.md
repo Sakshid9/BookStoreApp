@@ -1,4 +1,4 @@
-Oh no\! I am so sorry for the mix-up. I definitely grabbed the "Money Club" details by mistake. Let's fix this right now 
+
 -----
 
 # 📚 Bookstore MERN Application
@@ -7,7 +7,7 @@ A full-stack Bookstore application built using the **MERN** stack. This project 
 
 ## 🔗 Live Demo
 
-**View the project live:** [https://bookstore.dubeysakshi.in/](https://bookstore.dubeysakshi.in/)
+**View the project live:** \<a href="[https://bookstore.dubeysakshi.in/](https://bookstore.dubeysakshi.in/)" target="\_blank"\>[https://bookstore.dubeysakshi.in/](https://bookstore.dubeysakshi.in/)\</a\>
 
 -----
 
@@ -24,6 +24,8 @@ A full-stack Bookstore application built using the **MERN** stack. This project 
 
 ## ✨ Features
 
+\<a name="-features"\>\</a\>
+
   * **User Authentication:** Secure Signup and Login using `react-hook-form`.
   * **Dynamic Book Listing:** Fetched directly from MongoDB with a dedicated "Free Books" section.
   * **Protected Routes:** Secure access to the `/course` page for authenticated users only.
@@ -35,6 +37,8 @@ A full-stack Bookstore application built using the **MERN** stack. This project 
 
 ## 🛠️ Tech Stack
 
+\<a name="-tech-stack"\>\</a\>
+
   * **Frontend:** React.js, Tailwind CSS, DaisyUI, Axios.
   * **Backend:** Node.js, Express.js.
   * **Database:** MongoDB Atlas.
@@ -43,6 +47,8 @@ A full-stack Bookstore application built using the **MERN** stack. This project 
 -----
 
 ## 📂 Project Structure
+
+\<a name="-project-structure"\>\</a\>
 
 ```text
 BOOKSTOREAPP/
@@ -60,6 +66,8 @@ BOOKSTOREAPP/
 -----
 
 ## ⚙️ Installation
+
+\<a name="-installation"\>\</a\>
 
 ### 1\. Clone the repository
 
@@ -85,6 +93,8 @@ cd BOOKSTOREAPP
 
 ## 📡 API Endpoints
 
+\<a name="-api-endpoints"\>\</a\>
+
   * `GET /book` - Fetch all books.
   * `POST /user/signup` - User registration.
   * `POST /user/login` - User authentication.
@@ -93,10 +103,12 @@ cd BOOKSTOREAPP
 
 ## 🤝 Connect With Me
 
+\<a name="-connect-with-me"\>\</a\>
+
 Created by **Sakshi Dubey**
 
-  * **GitHub:** [https://github.com/your-username](https://www.google.com/search?q=https://github.com/your-username)
-  * **LinkedIn:** [https://www.linkedin.com/in/your-profile](https://www.google.com/search?q=https://www.linkedin.com/in/your-profile)
+  * **GitHub:** \<a href="[https://github.com/your-username](https://www.google.com/search?q=https://github.com/your-username)" target="\_blank"\>[github.com/your-username](https://github.com/Sakshid9)\</a\>
+  * **LinkedIn:** \<a href="[https://www.linkedin.com/in/your-profile](https://www.google.com/search?q=https://www.linkedin.com/in/your-profile)" target="\_blank"\>[linkedin.com/in/your-profile](https://www.linkedin.com/in/sakshid9/)\</a\>
 
 -----
 
