@@ -1,6 +1,4 @@
-I’ve integrated the **Table of Contents** with clickable anchor links and merged your personal details into the bookstore context. This makes the README look professional and easy to navigate on GitHub.
 
-Copy and paste this into your `README.md`:
 
 -----
 
