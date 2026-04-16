@@ -1,24 +1,24 @@
 
 -----
 
-# 📚 Bookstore MERN Application
+# 📚 BookStoreApp
 
 A full-stack Bookstore application built using the **MERN** stack. This project features user authentication, a dynamic book display with categories, and a fully responsive interface.
 
 ## 🔗 Live Demo
 
-**View the project live:** \<a href="[https://bookstore.dubeysakshi.in/](https://bookstore.dubeysakshi.in/)" target="\_blank"\>[https://bookstore.dubeysakshi.in/](https://bookstore.dubeysakshi.in/)\</a\>
+**View the project live:** [https://bookstore.dubeysakshi.in/](https://bookstore.dubeysakshi.in/)
 
 -----
 
 ## 📑 Table of Contents
 
-  * [Features](https://www.google.com/search?q=%23features)
-  * [Tech Stack](https://www.google.com/search?q=%23tech-stack)
-  * [Project Structure](https://www.google.com/search?q=%23project-structure)
-  * [Installation](https://www.google.com/search?q=%23installation)
-  * [API Endpoints](https://www.google.com/search?q=%23api-endpoints)
-  * [Connect With Me](https://www.google.com/search?q=%23connect-with-me)
+  * [Features](https://www.google.com/search?q=%23-features)
+  * [Tech Stack](https://www.google.com/search?q=%23-tech-stack)
+  * [Project Structure](https://www.google.com/search?q=%23-project-structure)
+  * [Installation](https://www.google.com/search?q=%23-installation)
+  * [API Endpoints](https://www.google.com/search?q=%23-api-endpoints)
+  * [Connect With Me](https://www.google.com/search?q=%23-connect-with-me)
 
 -----
 
@@ -95,7 +95,8 @@ cd BookStoreApp
 
 Created by **Sakshi Dubey**
 
-  * **GitHub:** \<a href="[https://github.com/Sakshid9](https://github.com/Sakshid9)" target="\_blank"\>[github.com/Sakshid9](https://github.com/Sakshid9)\</a\>
-  * **LinkedIn:** \<a href="[https://www.linkedin.com/in/sakshid9/](https://www.linkedin.com/in/sakshid9/)" target="\_blank"\>[linkedin.com/in/sakshid9](https://www.google.com/search?q=https://linkedin.com/in/sakshid9)\</a\>
+  * **GitHub:** [https://github.com/Sakshid9](https://github.com/Sakshid9)
+  * **LinkedIn:** [https://www.linkedin.com/in/sakshid9/](https://www.linkedin.com/in/sakshid9/)
 
 -----
+
